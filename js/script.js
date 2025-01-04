@@ -16,9 +16,14 @@ navbarclose.addEventListener('click', () => {
 
 
 // Add a scroll event listener
-let navbar = document.getElementById('navbar')
+let navbar = document.querySelector('.navbar')
 window.addEventListener('scroll', () => {
-    navbar.style.backgroundColor = "#041126";
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = "#041126";
+    }
+    else {
+        navbar.style.backgroundColor = "";
+    }
 });
 
 
