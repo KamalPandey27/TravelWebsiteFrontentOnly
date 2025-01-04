@@ -32,20 +32,20 @@ let home = document.getElementById('section_1')
 
 
 
-// setInterval(() => {
+setInterval(() => {
 
-//     let imgArr = [
-//         "bg1.png",
-//         "bg2.png",
-//         "bg3.png",
-//         "b4.png",
-//         "bg5.png",
-//         "bg6.png"
-//     ]
+    let imgArr = [
+        "bg1.png",
+        "bg2.png",
+        "bg3.png",
+        "b4.png",
+        "bg5.png",
+        "bg6.png"
+    ]
 
-//     let randomImage = Math.floor(Math.random() * 6)
-//     home.style.backgroundImage = `url(/img/${imgArr[randomImage]})`;
-// }, 1500);
+    let randomImage = Math.floor(Math.random() * 6)
+    home.style.backgroundImage = `url(/img/${imgArr[randomImage]})`;
+}, 1500);
 
 
 
