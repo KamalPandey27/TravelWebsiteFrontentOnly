@@ -26,7 +26,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     overflow-x: hidden;
 }
 
@@ -199,6 +199,7 @@ header ul li a:hover {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -213,11 +214,113 @@ header ul li a:hover {
     width: 115px;
 }
 
+.homepagetour div span {
+    text-align: center;
+}
+
 .homepagetour img:hover {
     width: 75px;
     height: 75px;
 }
 
+/* style on section 2 which is destination part */
+
+#section_2 {
+    width: 75vw;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_2_header_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.section_2_header_part_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section_2_small_heading {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.section_2_main_heading {
+    font-size: 2.7rem;
+}
+
+
+.section_2_header_part_btn {
+    padding: 15px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.section_2_header_part_btn:hover {
+    background-color: #f60000;
+    padding: 16px;
+}
+
+.section_2_main_part {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+
+.section_2_main_part img:last-child {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center center;
+    transition: all 0.3s ease-in-out;
+}
+
+.section_2_main_part > div {
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    height: 300px;
+}
+
+.section_2_main_part img:last-child:hover {
+    width: 260px;
+    height: 310px;
+}
+
+.section_2_main_part div div {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
 
 
 
@@ -250,7 +353,9 @@ header ul li a:hover {
     header ul {
         display: none;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 50px;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -276,4 +381,104 @@ header ul li a:hover {
     }
 
 
+}
+
+
+/* Responsive style of a home page */
+
+@media only screen and (max-width:780px) {
+    .section_1_content {
+        padding-left: 5vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width:680px) {
+    .section_1_content .heading_1 {
+        font-size: 2.2rem;
+        margin-left: 18px;
+
+    }
+
+    .section_1_content {
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    .section_1_content {
+        gap: 5px;
+    }
+
+    .homepagetour img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .homepagetour div {
+        width: 100px;
+        justify-content: flex-start;
+    }
+
+    .homepagetour {
+        gap: 10px;
+
+    }
+}
+
+/* responsive styles of destination section */
+
+@media only screen and (max-width:1080px) {
+    .section_2_main_part {
+        gap: 15px;
+    }
+    .section_2_main_part img:last-child {
+        width: 230px;
+        height: 270px;
+    }
+    .section_2_main_part img:last-child:hover {
+        width: 240px;
+        height: 280px;
+    }
+    .section_2_main_part > div {
+        width: 230px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width:960px) {
+
+    .section_2_main_part {
+        gap: 30px;
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width:800px) {
+    .section_2_main_heading {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    #section_2 {
+        width: 100vw;
+    }
+    .section_2_header_part {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .section_2_header_part_btn {
+        padding: 10px;
+    }
+    .section_2_main_heading {
+        font-size: 1.5rem;
+    }
 }
