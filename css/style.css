@@ -228,7 +228,7 @@ header ul li a:hover {
 #section_2 {
     width: 75vw;
     height: auto;
-    margin: 30px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,7 +295,7 @@ header ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.section_2_main_part > div {
+.section_2_main_part>div {
     position: relative;
     cursor: pointer;
     width: 250px;
@@ -321,6 +321,135 @@ header ul li a:hover {
     justify-content: center;
     gap: 4px;
 }
+
+
+/* Section 3 style about us page */
+
+#section_3 {
+    display: flex;
+    padding: 60px 0px;
+    width: 75vw;
+    margin: auto;
+}
+
+.section_3_box_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+}
+
+.section_3_box_1_heading_1 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.section_3_box_1_heading_2 {
+    font-size: 2.7rem;
+}
+
+.section_3_box_1 p {
+    font-size: 14px;
+    color: var(--second-color);
+}
+
+.section_3_box_1_btn {
+    border: none;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+.section_3_box_1_btn:hover {
+    background-color: var(--other-color);
+    color: black;
+    border: 1px solid var(--text-color);
+}
+
+.section_3_MainImage {
+    margin: 0px 30px;
+    width: 30%;
+}
+
+.section_3_box_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+.section_3_box_2 .section_3_box_2_boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.section_3_box_2_img img {
+    width: 30px;
+    height: 30px;
+}
+
+.section_3_box_2_img {
+    background-color: var(--other-color);
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_3_box_2_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section_3_box_2_content p {
+    color: var(--second-color);
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -435,15 +564,18 @@ header ul li a:hover {
     .section_2_main_part {
         gap: 15px;
     }
+
     .section_2_main_part img:last-child {
         width: 230px;
         height: 270px;
     }
+
     .section_2_main_part img:last-child:hover {
         width: 240px;
         height: 280px;
     }
-    .section_2_main_part > div {
+
+    .section_2_main_part>div {
         width: 230px;
         height: 270px;
     }
@@ -469,6 +601,7 @@ header ul li a:hover {
     #section_2 {
         width: 100vw;
     }
+
     .section_2_header_part {
         padding: 10px 20px;
     }
@@ -478,7 +611,82 @@ header ul li a:hover {
     .section_2_header_part_btn {
         padding: 10px;
     }
+
     .section_2_main_heading {
         font-size: 1.5rem;
+    }
+}
+
+
+/* Responsive style of about us section */
+
+@media only screen and (max-width:1380px) {
+    .section_3_box_1_heading_2 {
+        font-size: 2rem;
+    }
+
+    .section_3_box_2_img {
+        padding: 10px;
+    }
+
+    .section_3_box_2_img img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    #section_3 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section_3_box_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+    }
+
+    .section_3_box_2 {
+        padding-top: 50px;
+    }
+
+    .section_3_box_1_btn {
+        padding: 0px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .section_3_MainImage {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #section_3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 60px 0px;
+        width: 75vw;
+        margin: auto;
+    }
+
+    .section_3_box_1 {
+        width: 88%;
+    }
+    .section_3_MainImage {
+        margin: 30px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    #section_3 {
+        padding: 30px 0px;
+        width: 93vw;
     }
 }
