@@ -304,6 +304,7 @@ header ul li a:hover {
 .section_2_main_part {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 25px;
@@ -955,7 +956,7 @@ footer {
         height: 25px;
     }
 
-    .section_4_main_box_img img {
+    .section_4_main_box_img {
         width: 320px;
         height: 220px;
     }
@@ -1010,7 +1011,7 @@ footer {
         width: 300px;
     }
 
-    .section_4_main_box_img img {
+    .section_4_main_box_img {
         width: 300px;
         height: 200px;
     }
@@ -1032,7 +1033,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .section_4_main_box_img img {
+    .section_4_main_box_img{
         width: 300px;
         height: 200px;
     }
@@ -1043,7 +1044,7 @@ footer {
         gap: 15px;
     }
 
-    .section_4_main_box_img img {
+    .section_4_main_box_img {
         width: 270px;
         height: 170px;
     }
@@ -1058,14 +1059,14 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .section_4_main_box_img img {
+    .section_4_main_box_img{
         width: 350px;
         height: 220px;
     }
 }
 
 @media only screen and (max-width:450px) {
-    .section_4_main_box_img img {
+    .section_4_main_box_img {
         width: 300px;
         height: 200px;
     }
