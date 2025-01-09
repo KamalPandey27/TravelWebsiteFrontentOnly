@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
 
 
 // add image on home page
-let home = document.getElementById('section_1')
+// let home = document.getElementById('section_1')
 
 
 
